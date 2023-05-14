@@ -172,7 +172,7 @@
 	}
 }
 
-.text:nth-child(2)::after, .text:nth-child(2)::before {
+.text::after, .text::before {
 	content: "";
 	display: block;
 	background: url("../img/separator.png") no-repeat center center;
