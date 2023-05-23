@@ -50,11 +50,7 @@
 	width: 70px;
 }
 
-#burger {
-	display: none;
-}
-
-#burger:checked ~ #overlay {
+.show {
 	display: block;
 }
 
@@ -75,7 +71,7 @@
 	height: 100vh;
 }
 
-#burger_close {
+.overlay .burger--click {
 	width: 34px;
 	position: absolute;
 	top: 50px;
