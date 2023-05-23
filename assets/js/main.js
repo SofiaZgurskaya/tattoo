@@ -4,14 +4,14 @@ const burgers = document.querySelectorAll(".burger--click"),
 
 burgers.forEach(burger => {
     burger.addEventListener("click", () => {
-        if (overlay.classList.contains("show")) {
+        overlay.classList.toggle("show");
+         if (overlay.classList.contains("show")) {
             navItem.forEach(item => {
                 item.addEventListener("click", () => {
                     overlay.classList.remove("show");
                 });
             });
         }
-        overlay.classList.toggle("show");
     });
 });
 
